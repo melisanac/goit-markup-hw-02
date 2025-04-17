@@ -91,12 +91,11 @@ h1 {
   color: #ffffff;
 
   /* Buton stili */
-  border-radius: 4px;
   width: 169px;
   height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   cursor: pointer;
+  border: none;
 }
 
 .button:hover,
@@ -138,19 +137,19 @@ h2 {
 
 /* EĞİTMEN İÇİN NOT: Görsel boyutları CSS kodu ile ayarlandı */
 .team-images {
-  width: 262px;
+  width: 264px;
   height: 260px;
 }
 
 /* EĞİTMEN İÇİN NOT: body etiketi içerisine color:#434455 stilini eklememe rağmen siyah renk uygulandığı için bu kısımlara tekrardan renk kodu girdim. */
 .team-list > li {
-  border: 1px solid black;
   width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   color: #434455;
+  background-color: #ffffff;
 }
 
 /* Portfolyo */
@@ -160,7 +159,6 @@ h2 {
 }
 
 .portfolio-list > li {
-  border: 1px solid black;
   width: 364px;
   color: #434455;
 }
