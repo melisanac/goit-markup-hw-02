@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Verdana', sans-serif;
   color: #434455;
-  padding-left: 156px;
+  letter-spacing: 0.02em;
 }
 
 ul {
   list-style-type: none;
 }
 
+/* EĞİTMEN İÇİN NOT: Geliştirici araç ile Our Team kategorisindeki görsellere baktığımda padding özelliğinin 40px olduğunu gördüm. Yazılar direkt sola girintisiz 
+hizalandığı için görsel açıdan girintili çıkıntılı görünmesin diye padding-left: 40px; özelliği verdim. Sadece butona bu özelliği ilave edemedim sanırım önümüzdeki 
+dersin konusuna biraz erken giriş yaptım :)  */
+
+/* Header kısmına ait stil kodları */
+/* Üst logo */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -19,27 +25,49 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: #2e2f42;
-}
-
-.nav {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  padding-left: 40px;
 }
 
 .accent {
   color: #4d5ae5;
 }
 
-.address {
+/* Navigasyon */
+.nav a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #404bbf;
+}
+
+li > .active:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
+
+/* Adres */
+.address a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+  padding-left: 40px;
 }
 
+.address a:hover,
+.address a:focus {
+  color: #404bbf;
+}
+
+/* Main kısmına ait stil kodları */
+/* Hero */
 .hero {
   height: 600px;
   background: #2e2f42;
@@ -49,7 +77,6 @@ h1 {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07143;
-  letter-spacing: 0.02em;
   text-align: center;
   padding-top: 188px;
   color: #ffffff;
@@ -57,12 +84,11 @@ h1 {
 
 .button {
   /* Buton içi yazı stili */
-  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
+  color: #ffffff;
 
   /* Buton stili */
   border-radius: 4px;
@@ -70,22 +96,34 @@ h1 {
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+  cursor: pointer;
 }
 
-.features h3 {
+.button:hover,
+.button:focus {
+  background: #404bbf;
+}
+
+/* Features */
+h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.team h3:hover,
+.team h3:focus {
+  color: #404bbf;
 }
 
 .features p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
+/* Team */
 .team {
   background: #f4f4fd;
 }
@@ -94,20 +132,28 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
-  letter-spacing: 0.02em;
   text-align: center;
+  color: #2e2f42;
 }
 
+/* EĞİTMEN İÇİN NOT: Görsel boyutları CSS kodu ile ayarlandı */
 .team-images {
   width: 262px;
   height: 260px;
 }
 
+/* EĞİTMEN İÇİN NOT: body etiketi içerisine color:#434455 stilini eklememe rağmen siyah renk uygulandığı için bu kısımlara tekrardan renk kodu girdim. */
 .team-list > li {
   border: 1px solid black;
   width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #434455;
 }
 
+/* Portfolyo */
 .portfolio-images {
   width: 360px;
   height: 300px;
@@ -116,11 +162,13 @@ h2 {
 .portfolio-list > li {
   border: 1px solid black;
   width: 364px;
+  color: #434455;
 }
 
+/* Footer kısmına ait stil kodları */
 .footer {
   height: 312px;
-  padding-left: 156px;
+  padding-left: 40px;
   padding-top: 100px;
   background: #2e2f42;
 }
@@ -129,7 +177,6 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
