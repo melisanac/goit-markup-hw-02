@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body {
+  font-family: 'Roboto', 'Verdana', sans-serif;
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* EĞİTMEN İÇİN NOT: Geliştirici araç ile Our Team kategorisindeki görsellere baktığımda padding özelliğinin 40px olduğunu gördüm. Yazılar direkt sola girintisiz 
+hizalandığı için görsel açıdan girintili çıkıntılı görünmesin diye padding-left: 40px; özelliği verdim. Sadece butona bu özelliği ilave edemedim sanırım önümüzdeki 
+dersin konusuna biraz erken giriş yaptım :)  */
+
+/* Header kısmına ait stil kodları */
+/* Üst logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2e2f42;
+  padding-left: 40px;
+}
+
+.accent {
+  color: #4d5ae5;
+}
+
+/* Navigasyon */
+.nav a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #404bbf;
+}
+
+li > .active:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
+
+/* Adres */
+.adres a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.adres a:hover,
+.adres a:focus {
+  color: #404bbf;
+}
+
+/* Main kısmına ait stil kodları */
+/* Hero */
+.hero {
+  height: 600px;
+  background: #2e2f42;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  text-align: center;
+  padding-top: 188px;
+  color: #ffffff;
+}
+
+.button {
+  /* Buton içi yazı stili */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  /* Buton stili */
+  width: 169px;
+  height: 56px;
+  background: #4d5ae5;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background: #404bbf;
+}
+
+/* Features */
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.team h3:hover,
+.team h3:focus {
+  color: #404bbf;
+}
+
+.features p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Team */
+.team {
+  background: #f4f4fd;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-align: center;
+  color: #2e2f42;
+}
+
+/* EĞİTMEN İÇİN NOT: Görsel boyutları CSS kodu ile ayarlandı */
+.team-images {
+  width: 264px;
+  height: 260px;
+}
+
+/* EĞİTMEN İÇİN NOT: body etiketi içerisine color:#434455 stilini eklememe rağmen siyah renk uygulandığı için bu kısımlara tekrardan renk kodu girdim. */
+.team-list > li {
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+/* Portfolyo */
+.portfolio-images {
+  width: 360px;
+  height: 300px;
+}
+
+.portfolio-list > li {
+  width: 364px;
+  color: #434455;
+}
+
+/* Footer kısmına ait stil kodları */
+.footer {
+  height: 312px;
+  padding-left: 40px;
+  padding-top: 100px;
+  background: #2e2f42;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
